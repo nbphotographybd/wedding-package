@@ -94,34 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
         goToSlide(currentIndex + 1);
     }, 5000);
     
-    // YouTube Video Functionality
-    const playButtons = document.querySelectorAll('.play-button');
-    const youtubeModal = document.getElementById('youtubeModal');
-    const youtubeIframe = document.getElementById('youtubeIframe');
-    
-    playButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const videoId = this.getAttribute('data-video');
-            youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            youtubeModal.style.display = 'flex';
-        });
-    });
-    
-    // Close YouTube modal
-    document.querySelector('#youtubeModal .close-modal').addEventListener('click', function() {
-        youtubeIframe.src = '';
-        youtubeModal.style.display = 'none';
-    });
-    
-    // Live Chat Functionality
-    const liveChatBtn = document.getElementById('liveChatBtn');
-    
-    liveChatBtn.addEventListener('click', function() {
-        if (typeof Tawk_API !== 'undefined') {
-            Tawk_API.toggle();
-        }
-    });
-    
     // Booking Modal Functionality
     const bookButtons = document.querySelectorAll('.book-btn');
     const bookingModal = document.getElementById('bookingModal');
@@ -166,18 +138,12 @@ document.addEventListener('DOMContentLoaded', function() {
     closeModal.forEach(btn => {
         btn.addEventListener('click', function() {
             bookingModal.style.display = 'none';
-            youtubeModal.style.display = 'none';
-            youtubeIframe.src = '';
         });
     });
 
     window.addEventListener('click', function(event) {
         if (event.target === bookingModal) {
             bookingModal.style.display = 'none';
-        }
-        if (event.target === youtubeModal) {
-            youtubeModal.style.display = 'none';
-            youtubeIframe.src = '';
         }
     });
 
@@ -209,5 +175,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
         });
+    });
+
+    // Live Chat Functionality
+    const liveChatBtn = document.getElementById('liveChatBtn');
+    
+    liveChatBtn.addEventListener('click', function() {
+        if (typeof Tawk_API !== 'undefined') {
+            Tawk_API.toggle();
+        }
     });
 });

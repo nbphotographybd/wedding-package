@@ -253,6 +253,63 @@ header h1 {
     font-weight: 500;
 }
 
+/* FAQ Styles */
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.faq-question {
+    background: var(--primary);
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.faq-answer {
+    background: white;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 20px;
+    max-height: 500px;
+}
+
+/* Live Chat Button */
+.live-chat-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.live-chat-btn:hover {
+    transform: scale(1.1);
+    background: var(--accent);
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     header h1 {
@@ -293,5 +350,13 @@ header h1 {
     
     .counter-number {
         font-size: 2rem;
+    }
+    
+    .live-chat-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        bottom: 20px;
+        right: 20px;
     }
 }

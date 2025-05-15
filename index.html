@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NB Photography Wedding Package</title>
+    <title>NB Photography - Premium Wedding Packages</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -56,7 +56,7 @@
     </section>
 
     <!-- Packages Section -->
-    <section id="packages" style="font-family: 'Hind Siliguri', sans-serif;">
+    <section id="packages">
         <div class="container">
             <h2 style="font-size: 2.5rem; color: var(--primary); margin: 60px 0 30px; text-align: center;">আমাদের ইভেন্ট প্যাকেজসমূহ</h2>
             
@@ -87,14 +87,81 @@
                     <button class="btn book-btn" style="display: block; width: 100%;" data-package="বেসিক প্যাকেজ ০১" data-price="৳৮,০০০" data-features="১ সিনিয়র ফটোগ্রাফার, ৫ ঘণ্টা কভারেজ, ১০০ এডিটেড ছবি, কাস্টমাইজড অ্যালবাম + ১০০ প্রিন্ট">বুক করুন</button>
                 </div>
 
-                <!-- Other package cards remain the same -->
+                <!-- Additional package cards would go here -->
                 <!-- ... -->
             </div>
         </div>
     </section>
 
-    <!-- Other sections remain the same -->
-    <!-- ... -->
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2 style="font-size: 2.2rem; color: var(--primary); margin: 60px 0 30px; text-align: center;">আমাদের কাজের গ্যালারি</h2>
+            
+            <div class="gallery-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slider-slide">
+                        <img src="assets/images/wedding1.jpg" alt="Wedding Photography">
+                        <div class="slider-caption">ওয়েডিং ফটোগ্রাফি</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="assets/images/couple1.jpg" alt="Couple Photography">
+                        <div class="slider-caption">কাপল ফটোগ্রাফি</div>
+                    </div>
+                    <!-- More slides would go here -->
+                </div>
+                
+                <div class="slider-nav">
+                    <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 style="font-size: 2.1rem; color: var(--primary); margin: 60px 0 30px; text-align: center;">সচরাচর জিজ্ঞাসিত প্রশ্ন</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>ফটোশুটের জন্য কতদিন আগে বুকিং করতে হবে?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>আমরা সাধারণত কমপক্ষে ৩ দিন আগে বুকিং নিয়ে থাকি। তবে উইকেন্ড বা ছুটির দিনে ফটোশুটের জন্য অন্তত ১ সপ্তাহ আগে বুকিং করার পরামর্শ দিই।</p>
+                </div>
+            </div>
+            
+            <!-- More FAQ items would go here -->
+            <!-- ... -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card" style="background: linear-gradient(135deg, var(--primary), var(--dark)); color: white;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; text-align: center;">আপনার ফটোশুট বুকিং করতে প্রস্তুত</h2>
+            <p style="text-align: center; margin-bottom: 30px; font-size: 1.1rem;">আজই আমাদের সাথে যোগাযোগ করুন আপনার রিকোয়ার্মেন্ট নিয়ে আলোচনা করতে বা কাস্টম প্যাকেজের জন্য জিজ্ঞাসা করতে!</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px;">
+                <a href="tel:01628233346" style="display: flex; align-items: center; color: white; text-decoration: none; background: rgba(255,255,255,0.1); padding: 15px 25px; border-radius: 10px;">
+                    <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+                    ০১৬২৮২৩৩৩৪৬
+                </a>
+                <a href="https://wa.me/8801628233346" style="display: flex; align-items: center; color: white; text-decoration: none; background: rgba(255,255,255,0.1); padding: 15px 25px; border-radius: 10px;">
+                    <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>
+                    হোয়াটসঅ্যাপ
+                </a>
+                <a href="https://facebook.com/nbphotographybd46" style="display: flex; align-items: center; color: white; text-decoration: none; background: rgba(255,255,255,0.1); padding: 15px 25px; border-radius: 10px;">
+                    <i class="fab fa-facebook-f" style="margin-right: 10px;"></i>
+                    ফেসবুক পেজ
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Booking Modal -->
     <div class="booking-modal" id="bookingModal">
@@ -113,16 +180,6 @@
                 <a href="tel:01628233346" class="btn" style="background: var(--accent); display: flex; align-items: center; justify-content: center;">
                     <i class="fas fa-phone-alt" style="margin-right: 10px;"></i> কল করুন
                 </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- YouTube Video Modal -->
-    <div class="booking-modal" id="youtubeModal">
-        <div class="modal-content card" style="max-width: 800px;">
-            <span class="close-modal">&times;</span>
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                <iframe id="youtubeIframe" width="100%" height="100%" style="position: absolute; top: 0; left: 0;" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
